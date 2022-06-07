@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Serverless Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Form Serverless Demo</a>
+    </div>
+    <ul class="nav navbar-nav">
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Student Register Form </h2> <br/> <br/><br/>
+  <form action="/registerForm" method="POST">
+    <div class="form-group">
+        <label for="name">Enter your name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name " name="name">
+    </div>
+    <div class="form-group">
+        <label for="name">Enter your roll number</label>
+        <input type="text" class="form-control" id="rollno" placeholder="Enter your roll number " name="rollno">
+    </div>
+    <div class="form-group">
+        <label for="name">Enter your resume link</label>
+        <input type="text" class="form-control" id="resumelink" placeholder="Enter your resume link " name="resumelink">
+    </div>
+    <div class="form-group">
+        <label for="name">Enter your email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email " name="email">
+    </div>
+    <div class="form-group">
+        <label for="name">Enter your phone number</label>
+        <input type="text" class="form-control" id="phoneno" placeholder="Enter your phone no " name="phoneno">
+    </div>
+    <div class="form-group">
+        <label for="name">Enter your Current Semester</label>
+        <input type="text" class="form-control" id="currentsem" placeholder="Enter your Current Semester " name="currentsem">
+    </div>
+    <div class="form-group">
+        <label for="name">Enter your aggregate</label>
+        <input type="text" class="form-control" id="aggregate" placeholder="Enter your aggregate" name="aggregate">
+    </div>
+    <div class="form-group">
+        <label for="sel1">Select your department:</label>
+        <select class="form-control" id="lotlabform" name='department'>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>IT</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-login" id="register">Register</button>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+</html>
